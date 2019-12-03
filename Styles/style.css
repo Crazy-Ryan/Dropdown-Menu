@@ -20,7 +20,8 @@ body {
   padding: 15px;
 }
 
-p {
+p,
+a {
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
 }
@@ -46,7 +47,7 @@ a {
 }
 
 .detail-list {
-  display: none;    
+  display: none;     
 }
 
 .detail-list::before {
@@ -67,8 +68,7 @@ a {
 }
 
 .detail-list li{
-  display: flex;
-  padding: 10px;
+  padding: 0.25em 0.25em 0.25em 2em;
 }
 
 .detail-list .like,
@@ -76,21 +76,26 @@ a {
   border-bottom: 2px solid #f87e6d;
 }
 
-.detail-list .list-icon {
-  width: 2em;
-  height: 1.5em;
-  background-image: url(/Images/icon.png);
-  background-size: 4.5em;
+.like,
+.favorites,
+.discuss {
+  background-image: url(../Images/icon.png);
+  background-size: 5em;
+  background-repeat: no-repeat;
 }
 
-.like .list-icon {
-  background-position: 9.5em 11.5em;
+.like {
+  background-position: 0.5em -1.2em;
 }
 
-.favorites .list-icon {
-  background-position: 3.1em 0.24em;
+.favorites {
+  background-position: -1.65em 0.5em;
 }
 
-.discuss .list-icon {
-  background-position: 9.5em 0.24em;
+.discuss {
+  background-position: 0.5em 0.5em;
+}
+
+.discuss p {
+  background-color: #f75040;
 }
